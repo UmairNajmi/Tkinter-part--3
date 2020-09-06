@@ -1,0 +1,31 @@
+"""""
+# Working on image extension 'png' how to display on window
+from tkinter import *
+
+najmi_root = Tk()
+
+najmi_root.geometry("755x644")
+photo = PhotoImage(file="0002.png")
+
+umair_label = Label(image=photo)
+umair_label.pack()
+
+najmi_root.mainloop()
+"""""
+"""""
+# Working on image extension 'jpg' how to display on window
+
+from tkinter import *
+from PIL import Image, ImageTk
+
+najmi_root = Tk()
+
+najmi_root.geometry("1255x944")
+#  For JPG Image
+image = Image.open("0001.jpg")
+photo = ImageTk.PhotoImage(image)
+umair_label = Label(image=photo)
+umair_label.pack()
+najmi_root.mainloop()
+
+"""""
